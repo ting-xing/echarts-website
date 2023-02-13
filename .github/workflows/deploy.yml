@@ -16,7 +16,7 @@ jobs:
       - name: Install ECharts WWW
         working-directory: tmp-workspace
         run: |
-          git clone --depth 1 https://github.com/apache/echarts-www
+          git clone --depth 1 https://github.com/1517607397/echarts-www.git
           cd echarts-www
           npm install
 
