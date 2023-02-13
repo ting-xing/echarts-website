@@ -60,7 +60,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: release
-          path: echarts-www
+          path: tmp-workspace/echarts-website
 
       - name: Install Dep
         run: npm install
