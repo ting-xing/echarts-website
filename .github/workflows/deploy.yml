@@ -62,19 +62,19 @@ jobs:
           name: release
           path: tmp-workspace/echarts-website
 
-      - name: Install Dep
-        run: npm install
+#       - name: Install Dep
+#         run: npm install
 
-      - name: Deploy 🚀
-        uses: ./node_modules/@jamesives/github-pages-deploy-action
-        with:
-          branch: asf-site
-          folder: tmp-workspace/echarts-website
-          single-commit: false
-          git-config-name: ${{env.GITHUB_ACTOR}}
-          clean: true
-          clean-exclude: |
-            .*
-            v4/**/*
-            README.md
-            package.json
+#       - name: Deploy 🚀
+#         uses: ./node_modules/@jamesives/github-pages-deploy-action
+#         with:
+#           branch: asf-site
+#           folder: tmp-workspace/echarts-website
+#           single-commit: false
+#           git-config-name: ${{env.GITHUB_ACTOR}}
+#           clean: true
+#           clean-exclude: |
+#             .*
+#             v4/**/*
+#             README.md
+#             package.json
