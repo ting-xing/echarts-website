@@ -55,6 +55,12 @@ jobs:
           mkdir echarts-website
           cd echarts-www
           npm run release
+          
+      - name: upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: release
+          path: echarts-www
 
       - name: Install Dep
         run: npm install
