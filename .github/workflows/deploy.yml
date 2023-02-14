@@ -23,7 +23,7 @@ jobs:
       - name: Install ECharts Doc
         working-directory: tmp-workspace
         run: |
-          git clone --depth 1 https://github.com/apache/echarts-doc
+          git clone --depth 1 https://github.com/1517607397/echarts-doc.git
           cd echarts-doc
           npm install
 
