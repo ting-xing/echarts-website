@@ -35,21 +35,21 @@ jobs:
       - name: Install ECharts Example
         working-directory: tmp-workspace
         run: |
-          git clone --depth 1 https://github.com/apache/echarts-examples
+          git clone --depth 1 https://github.com/1517607397/echarts-examples
           cd echarts-examples
           npm install --force
 
       - name: Install ECharts Theme Builder
         working-directory: tmp-workspace
         run: |
-          git clone --depth 1 https://github.com/apache/echarts-theme-builder
+          git clone --depth 1 https://github.com/1517607397/echarts-theme-builder
           cd echarts-theme-builder
           npm install
 
       - name: Install ECharts Handbook
         working-directory: tmp-workspace
         run: |
-          git clone https://github.com/apache/echarts-handbook
+          git clone https://github.com/1517607397/echarts-handbook
           cd echarts-handbook
           npm install
 
