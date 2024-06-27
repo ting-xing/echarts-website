@@ -11,20 +11,20 @@
 <div class="time">2024-06-27</div>
 
 <ul>
-<li>[Feature] [axis] 支持自定义坐标轴刻度/标签位置。 <a href="https://github.com/apache/echarts/issues/19919">#19919</a> (<a href="https://github.com/dvdkon">dvdkon</a>) (<a href="https://github.com/Ovilia">Ovilia</a>)</li>
-<li>[Feature] [bar] 添加<code>startValue</code>配置项。 <a href="https://github.com/apache/echarts/issues/17078">#17078</a> (<a href="https://github.com/jiawulin001">jiawulin001</a>)</li>
-<li>[Feature] [sankey] 添加<code>itemStyle.borderRadius</code>配置项. <a href="https://github.com/apache/echarts/issues/19763">#19763</a> (<a href="https://github.com/deftliang">deftliang</a>)</li>
-<li>[Feature] [time] 新增 12 小时制的时间模板 <code>{a}/{A}</code>. <a href="https://github.com/apache/echarts/issues/19888">#19888</a> (<a href="https://github.com/maurodesouza">maurodesouza</a>)</li>
-<li>[Feature] [geo] <code>georoam</code>事件添加<code>totalZoom</code>参数. <a href="https://github.com/apache/echarts/issues/19837">#19837</a> (<a href="https://github.com/zhaoxinggang">zhaoxinggang</a>)</li>
-<li>[Feature] [treemap] 新增<code>scaleLimit</code>配置项用于缩放的限制。 <a href="https://github.com/apache/echarts/issues/18304">#18304</a> (<a href="https://github.com/liuyizhou">liuyizhou</a>)</li>
-<li>[Fix] [series] 修复<code>seriesData.getLinkedData</code>触发的错误。 <a href="https://github.com/apache/echarts/issues/19901">#19901</a> (<a href="https://github.com/plainheart">plainheart</a>)</li>
-<li>[Fix] [marker] 修复标记标签格式化器无法获取系列信息的问题。 <a href="https://github.com/apache/echarts/issues/19898">#19898</a> (<a href="https://github.com/plainheart">plainheart</a>)</li>
-<li>[Fix] [aria] 修复 SSR 模式下的错误. <a href="https://github.com/apache/echarts/issues/19892">#19892</a> (<a href="https://github.com/OverflowCat">OverflowCat</a>)</li>
+<li>[Feature] [axis] 添加 <code>customValues</code> 配置项，支持自定义坐标轴刻度/标签位置。 <a href="https://github.com/apache/echarts/issues/19919">#19919</a> (<a href="https://github.com/dvdkon">dvdkon</a>) (<a href="https://github.com/Ovilia">Ovilia</a>)</li>
+<li>[Feature] [bar] 添加 <code>startValue</code> 配置项。 <a href="https://github.com/apache/echarts/issues/17078">#17078</a> (<a href="https://github.com/jiawulin001">jiawulin001</a>)</li>
+<li>[Feature] [sankey] 添加 <code>itemStyle.borderRadius</code> 配置项。 <a href="https://github.com/apache/echarts/issues/19763">#19763</a> (<a href="https://github.com/deftliang">deftliang</a>)</li>
+<li>[Feature] [time] 新增 12 小时制的时间模板 <code>{a}/{A}</code>。 <a href="https://github.com/apache/echarts/issues/19888">#19888</a> (<a href="https://github.com/maurodesouza">maurodesouza</a>)</li>
+<li>[Feature] [geo] <code>georoam</code> 事件添加 <code>totalZoom</code> 参数。 <a href="https://github.com/apache/echarts/issues/19837">#19837</a> (<a href="https://github.com/zhaoxinggang">zhaoxinggang</a>)</li>
+<li>[Feature] [treemap] 新增 <code>scaleLimit</code> 配置项用于限制缩放级别。 <a href="https://github.com/apache/echarts/issues/18304">#18304</a> (<a href="https://github.com/liuyizhou">liuyizhou</a>)</li>
+<li>[Fix] [series] 修复 <code>seriesData.getLinkedData</code> 触发的错误。 <a href="https://github.com/apache/echarts/issues/19901">#19901</a> (<a href="https://github.com/plainheart">plainheart</a>)</li>
+<li>[Fix] [marker] 修复 marker label 无法获取对应系列信息的问题。 <a href="https://github.com/apache/echarts/issues/19898">#19898</a> (<a href="https://github.com/plainheart">plainheart</a>)</li>
+<li>[Fix] [aria] 修复 SSR 模式下的错误。 <a href="https://github.com/apache/echarts/issues/19892">#19892</a> (<a href="https://github.com/OverflowCat">OverflowCat</a>)</li>
 <li>[Fix] [data] 修复使用 BigInt 值时产生的错误。 <a href="https://github.com/apache/echarts/issues/19847">#19847</a> (<a href="https://github.com/zettca">zettca</a>)</li>
-<li>[Fix] [pie] 修复 <code>endAngle</code> 在空数据的圆环下不生效的问题。 <a href="https://github.com/apache/echarts/issues/19642">#19642</a> (<a href="https://github.com/plainheart">plainheart</a>)</li>
-<li>[Fix] [toolbox] 修复在不存在<code>MouseEvent</code>的环境中未捕获的引用错误。<a href="https://github.com/apache/echarts/issues/19620">#19620</a> (<a href="https://github.com/plainheart">plainheart</a>)</li>
+<li>[Fix] [pie] 修复 v5.5.0 版本新增的 <code>endAngle</code> 选项在空数据的圆环下不生效的问题。 <a href="https://github.com/apache/echarts/issues/19642">#19642</a> (<a href="https://github.com/plainheart">plainheart</a>)</li>
+<li>[Fix] [toolbox] 修复在不存在 <code>MouseEvent</code> 的环境中未捕获的引用错误。<a href="https://github.com/apache/echarts/issues/19620">#19620</a> (<a href="https://github.com/plainheart">plainheart</a>)</li>
 <li>[Fix] [tooltip] 修复当图例名称为 HTML 字符串时的提示框 XSS 问题。<a href="https://github.com/apache/echarts/issues/20045">#20045</a> (<a href="https://github.com/plainheart">plainheart</a>)</li>
-<li>[Fix] [type] 修复自 v5.5.0 版本起，用户的 .d.ts 中<code>import(&#39;echarts/types/dist/shared&#39;)</code>无法访问 <code>echarts/types/dist/shared.d.ts</code>的问题。<a href="https://github.com/apache/echarts/issues/20030">#20030</a> (<a href="https://github.com/100pah">100pah</a>)</li>
+<li>[Fix] [type] 修复自 v5.5.0 版本起，用户的 .d.ts 中 <code>import(&#39;echarts/types/dist/shared&#39;)</code> 无法访问 <code>echarts/types/dist/shared.d.ts</code> 的问题。<a href="https://github.com/apache/echarts/issues/20030">#20030</a> (<a href="https://github.com/100pah">100pah</a>)</li>
 </ul>
 <h2 id="v5-5-0">v5.5.0</h2>
 <div class="time">2024-02-18</div>
