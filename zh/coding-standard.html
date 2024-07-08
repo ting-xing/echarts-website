@@ -571,38 +571,40 @@ const arr = new Array();
 <p><strong>[强制]</strong> 不要使用 <code>for in</code> 语句对数组进行遍历。</p>
 <h3 id="其他">其他</h3>
 <p><strong>[强制]</strong> 不要使用 <code>eval</code> 和 <code>with</code>。允许使用<code>new Function</code>。</p>
-<footer class="inner-footer"><div class="container"><div class="row"><div class="col-md-8"><p>Copyright © 2017-2024, The Apache Software Foundation Apache ECharts, ECharts, Apache, the Apache feather, and the Apache ECharts project logo are either registered trademarks or trademarks of the Apache Software Foundation.</p></div><div id="footer-icon-panel" class="col-md-4"><a href="https://www.apache.org"><img src="https://echarts.apache.org/zh/images/asf_logo.svg?_v_=20240226" class="footer-apache-logo"></a></div></div></div></footer></div></div></div></div><script type="text/javascript" src="https://lib.baomitu.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script><script type="text/javascript" src="https://echarts.apache.org/zh/js/common.js?_v_=85b684f192"></script><script type="text/javascript">document.getElementById('nav-contribute').className = 'active';
+<footer class="inner-footer"><div class="container"><div class="row"><div class="col-md-8"><p>Copyright © 2017-2024, The Apache Software Foundation Apache ECharts, ECharts, Apache, the Apache feather, and the Apache ECharts project logo are either registered trademarks or trademarks of the Apache Software Foundation.</p></div><div id="footer-icon-panel" class="col-md-4"><a href="https://www.apache.org"><img src="https://echarts.apache.org/zh/images/asf_logo.svg?_v_=20240226" class="footer-apache-logo"></a></div></div></div></footer></div></div></div></div><script type="text/javascript" src="https://lib.baomitu.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script><script type="text/javascript" src="https://echarts.apache.org/zh/js/common.js?_v_=85b684f192"></script><script type="text/javascript">$(document).ready(function() {
+    document.getElementById('nav-contribute').className = 'active';
 
-var $list = $('#standard-nav');
-$('.page-detail h2, .page-detail h3, .page-detail h4')
-    .each(function () {
-        var $this = $(this);
-        var text = $this.text();
-        var anchor = text.toLowerCase().replace(/[^\w\u4e00-\u9fa5]+/g, '-');
-        var tagName = $this.prop('tagName').toLowerCase();
+    var $list = $('#standard-nav').empty();
+    $('.page-detail h2, .page-detail h3, .page-detail h4')
+        .each(function () {
+            var $this = $(this);
+            var text = $this.text();
+            var anchor = text.toLowerCase().replace(/[^\w\u4e00-\u9fa5]+/g, '-');
+            var tagName = $this.prop('tagName').toLowerCase();
 
-        if (tagName === 'h2') {
-            $list.append('<li><a href="#' + anchor + '"><h4 class="inner">' + text + '</h4></a></li>');
-        }
-        else {
-            $list.append('<li><a href="#' + anchor + '">' + text + '</a></li>');
-        }
+            if (tagName === 'h2') {
+                $list.append('<li><a href="#' + anchor + '"><h4 class="inner">' + text + '</h4></a></li>');
+            }
+            else {
+                $list.append('<li><a href="#' + anchor + '">' + text + '</a></li>');
+            }
+        });
+
+    $('.page-nav a').click(function () {
+        $('.page-nav a').removeClass('active');
+        $(this).addClass('active');
     });
 
-$('.page-nav a').click(function () {
-    $('.page-nav a').removeClass('active');
-    $(this).addClass('active');
-});
+    // Fix scroll position covered by nav
+    window.addEventListener('hashchange', function() {
+        scrollBy(0, -50);
+    });
 
-// Fix scroll position covered by nav
-window.addEventListener('hashchange', function() {
-    scrollBy(0, -50);
-});
-
-$('.page-detail pre code').each(function (index, el) {
-    $(el).addClass('prettyprint');
-});
-prettyPrint();</script><!-- Baidu Tongji--><script type="text/javascript">var _hmt = _hmt || [];
+    $('.page-detail pre code').each(function (index, el) {
+        $(el).addClass('prettyprint');
+    });
+    prettyPrint();
+});</script><!-- Baidu Tongji--><script type="text/javascript">var _hmt = _hmt || [];
 (function() {
 var hm = document.createElement("script");
 
