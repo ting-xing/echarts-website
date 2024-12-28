@@ -13,7 +13,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 18.20.4
           registry-url: https://registry.npmjs.org/
 
       - name: Prepare workspace
@@ -40,24 +40,12 @@ jobs:
           cd echarts-examples
           npm install --force
 
-      - name: Setup Node.js v16
-        uses: actions/setup-node@v4
-        with:
-          node-version: 16
-          registry-url: https://registry.npmjs.org/
-
       - name: Install ECharts Theme Builder
         working-directory: tmp-workspace
         run: |
           git clone --depth 1 https://github.com/apache/echarts-theme-builder
           cd echarts-theme-builder
           npm install
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          registry-url: https://registry.npmjs.org/
 
       - name: Install ECharts Handbook
         working-directory: tmp-workspace
