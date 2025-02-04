@@ -14,7 +14,7 @@ RedirectMatch 404 /\.asf\.yaml
     Header set X-XSS-Protection "1; mode=block"
     Header set X-Frame-Options "sameorigin"
     Header set X-Content-Type-Options "nosniff"
-    Header always unset "content-security-policy"
+    Header always unset content-security-policy
 </IfModule>
 
 <IfModule mod_expires.c>E
