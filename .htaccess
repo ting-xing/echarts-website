@@ -17,7 +17,7 @@ RedirectMatch 404 /\.asf\.yaml
     Header always unset Content-Security-Policy
 </IfModule>
 
-<IfModule mod_expires.c>E
+<IfModule mod_expires.c>
     # disable expiration as the Apache server will also cache the `Expires` header,
     # which causes our expiration strategy not to work.
     #ExpiresActive on
